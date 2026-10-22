@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+            <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Selamat Ulang Tahun, Sayang! 🎉</title>
+                        <!-- Google Fonts -->
+                        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+                        <!-- Style CSS Terpisah -->
+                        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    
+    <!-- Canvas untuk Kembang Api -->
+    <canvas id="fireworks-canvas"></canvas>
+    
+    <!-- Container Balon Latar Belakang -->
+    <div id="balloon-container"></div>
+
+    <!-- Kartu Utama -->
+    <div class="card">
+                <h1 class="title">Happy Birthday! 🎂</h1>
+                    <p class="subtitle">Semoga hari spesialmu seru dan menyenangkan! ✨</p>
+                
+                        <!-- Visual Kue Ulang Tahun Interaktif (Klik untuk Tiup) -->
+                            <div class="cake-container" id="cakeArea" onclick="padamkanLilinManual()">
+                                            <div class="candle">
+                                                                <div class="flame" id="flame"></div>
+                                            </div>
+                                                    <div class="cake-top"></div>
+                                                            <div class="cake-bottom"></div>
+                                        </div>
+                                            <small class="hint">(Klik api lilin di atas untuk memadamkannya! 🕯️)</small>
+                                        
+                                                <!-- Tombol Aksi -->
+                                                    <div class="btn-group">
+                                                                    <button class="btn btn-primary" onclick="bukaPesan()">Buka Pesan Spesial 💌</button>
+                                                    </div>
+                                                
+                                                        <!-- Pesan Tersembunyi -->
+                                                            <div class="message-box" id="messageBox">
+                                                                            <p id="typedText"></p>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                        <!-- JavaScript Terpisah -->
+                                                        <script src="script.js"></script>
+                                                    </body>
+</html>
